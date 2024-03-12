@@ -12,5 +12,8 @@ I hope that by taking this course I know how to use Rstudio to try something dif
 
 ### hobby
 1.basketball 🏀 
+
 2.shopping 🛍️ 
-3.playing with LEGO 
+
+3.playing with LEGO
+
