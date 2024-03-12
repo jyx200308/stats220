@@ -10,8 +10,7 @@ I am a student from study stats 220.
 I hope that by taking this course I know how to use Rstudio to try something different, to make moving pictures that I like, to make the data more concise to make my work behind easy.
 
 
-## hobby
-
-1.basketball
-2.shopping 
-3.playing with LEGO
+### hobby
+1.basketball 🏀 
+2.shopping 🛍️ 
+3.playing with LEGO 
