@@ -14,10 +14,13 @@ Hi everyone , My name is Yuxuan Ji.I'm a sophomore from China now at the Univers
 I hope that by taking this course I know how to use Rstudio to try something different, to make moving pictures that I like, to make the data more concise to make my work behind easy.
 
 
-### hobby
+## hobby
 1.basketball 🏀 
 
 2.shopping 🛍️ 
 
 3.playing with LEGO
+
+
+## project1
 
