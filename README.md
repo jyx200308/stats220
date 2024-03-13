@@ -23,4 +23,4 @@ I hope that by taking this course I know how to use Rstudio to try something dif
 
 
 ## project1
-
+![](https://github.com/jyx200308/stats220/blob/59ffd03bcea133f15d8defa66f49db3d4091a53b/index)
