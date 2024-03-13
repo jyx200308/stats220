@@ -1,1 +1,105 @@
+---
+title: "project1"
+author: "Yuxuan JI?"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{css}
+
+```
+
+## Project requirements
+
+
+## My meme
+
+```{r meme-code, eval=TRUE}
+install.packages("xquartz")
+install.packages("magick")
+library(magick)
+#Renaming and resizing
+dragon_1 <- image_read("dragon.jpg")%>%
+  image_scale(800)
+#rename background and edit characters
+word_1 <- image_blank(width = 500,
+                      height = 500)%>%
+  image_annotate(gravity = "west",
+                 color = "gold",
+                 size = 200,
+                 font = 'Impact',
+                 text = "Younger")
+#Merging two photos
+Dragon1 <- c(dragon_1,word_1)%>%
+  image_mosaic()
+image_write(Dragon1, "Dragon.png")
+#Renaming and resizing
+dragon_2 <- image_read("dragon1.jpg")%>%
+  image_scale(1200)
+#rename background and edit characters
+word_2 <- image_blank(width=900,
+                      height=900)%>%
+  image_annotate(gravity="west",
+                 color="purple",
+                 size=200,
+                 font='Impact',
+                 text="Adult")
+Dragon2 <- c(dragon_2,word_2)%>%
+  image_mosaic()
+image_write(Dragon2, "Dragon2.png")
+#Merging two photos
+Left_column <- c(dragon_1,word_1)%>%
+  image_mosaic()
+Right_column <- c(dragon_2,word_2)%>%
+  image_mosaic()
+meme <- c(Left_column,Right_column)%>%
+  image_append(stack = FALSE)
+#save the meme
+image_write(meme, "my_meme.png")
+meme
+
+```
+
+
+```{r animation-code, eval=FALSE}
+counts <- 4 : 1 %>% as.character()
+
+heart_image <- image_read("https://editors.dexerto.com/wp-content/uploads/2023/03/21/csgo-new-logo-counter-strike.jpg") %>%
+  image_scale(500)
+
+#Design the motion graphics for each frame and adjust
+frame1 <- heart_image %>%
+  image_annotate(text = 'I', size = 100, gravity = "south") %>%
+  image_scale(200) %>%
+  image_extent("500x500")
+
+frame2 <- heart_image %>%
+  image_annotate(text = 'like', size = 100, gravity = "south") %>%
+  image_scale(300) %>%
+  image_extent("500x500")
+
+frame3 <- heart_image %>%
+  image_annotate(text = 'playing', size = 100, gravity = "south") %>%
+  image_scale(400) %>%
+  image_extent("500x500")
+
+frame4 <- heart_image %>%
+  image_annotate(text = "csgo", size = 100, gravity = "south") %>%
+  image_scale(500)
+#Stitching and continuous motion graphics
+frames <- c(frame1, frame2, frame3, frame4)
+
+
+image_animate(frames, fps = 1)
+
+```
+
+## Creativity
+Because the dragon is a symbol of China, in folklore has always been considered the existence of God, as a child has been in the TV inside a variety of cartoons about the dragon, to see a variety of dragon photos I have always felt very handsome and sacred, many parents in order to their own children in the future to have a good future will be in the name of a "dragon" child. In China, the dragon is known to everyone as a good-luck symbol. For thousands of years, the children of China have placed countless good wishes on it. In ancient times, the dragon represented good luck, justice, prosperity and power. The second animation is because I like to play csgo, I also hope to bring this spirit into my study, now the game is also included in the sports, I hope that csgo players can achieve good results.  
+
+## Learning reflection
+I learnt how to design my favourite animated pictures in Rstudio. I learnt how to write code in an organised way and think logically step by step about what to do next, which makes the code simpler and easier to sort out. Learn how to make your animated images more attractive, and how to change font colours. In the future, I am looking forward to making the data in statistics more vivid, so that more people can understand the joy of statistics.I hope I can use more photos to make moving pictures for my friends around me.
 
