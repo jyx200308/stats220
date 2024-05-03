@@ -3,7 +3,7 @@ I am a student from study stats 220.
 
 
 ## Introduction 
-Hi everyone , My name is Yuxuan Ji.I'm a sophomore from China now at the University of Auckland, and I'll be here to show my repository.I hope you enjoy it, and I hope you point out my problems!💕😘
+Hi everyone , My name is Yuxuan Ji.I'm a sophomore from China now at the [University of Auckland](https://www.auckland.ac.nz/en.html), and I'll be here to show my repository.I hope you enjoy it, and I hope you point out my problems!💕😘
 
 
 ## Work experience
